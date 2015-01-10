@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF3E27"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/edtKeyword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/form_background"
+                android:hint="search...."
+                android:inputType="text"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:imeOptions="actionSearch" 
+                />
+            <ImageButton
+                android:id="@+id/imageDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/delete"
+                android:layout_alignParentRight="true" 
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="7dip"
+                />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#E4231D"
+            android:src="@drawable/ic_search_white_36dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCategories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="7dip"
+        android:background="#E6E6E6"
+        android:divider="#E6E6E6"
+        android:padding="10dip"
+         >
+        
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2A2A" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please subscribe to receive our latest updates right in your email inbox, once a week."
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Name: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtNameSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:hint="name"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Email: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtEmailSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:hint="email"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Confirm Email: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtEmailConfirmSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:hint="confirm email"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Job Title: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtJobSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:hint="Job title"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="State/City: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtCitySub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:hint="city"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <TextView
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Country: "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <Spinner
+            android:id="@+id/spnCountrySub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:padding="7dip"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <CheckBox
+            android:id="@+id/chkTermSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="7dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textColor="#0044CC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <Button
+            android:id="@+id/btnSubmitSub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Subscribe"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnResetSub"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Reset"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

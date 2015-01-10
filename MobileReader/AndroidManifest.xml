@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.ava.mobilereader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="vn.ava.mobilereader.appcontroller.AppControllerVolley"
+        android:allowBackup="true"
+        android:icon="@drawable/photo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="vn.ava.mobilereader.view.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateHidden"
+            android:name="vn.ava.mobilereader.view.ListCategoriesItem"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+   
+        <activity
+            android:name="vn.ava.mobilereader.view.ViewContent"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="vn.ava.mobilereader.view.FragmentMain"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+         <activity
+            android:name="vn.ava.mobilereader.view.Quizz"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+    </application>
+
+</manifest>
